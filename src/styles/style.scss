@@ -1,0 +1,37 @@
+.App{
+    background-color: #9086E1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signup-container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    .input-field{
+        color: white;
+       
+
+        .input-fields{
+            width: 300px;
+            height: 20px;
+            border-radius: 15px;
+            border: none;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        
+    }
+
+    .button {
+        place-items: center;
+        input{
+            padding: 10px;
+            width: 100px;
+            color: white;
+            background-color: rgb(214, 163, 22);
+            border: none;
+            border-radius: 15px;
+        }
+    }
+}

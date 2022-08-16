@@ -1,13 +1,17 @@
 .App{
-    background-color: #9086E1;
-    height: 100vh;
-    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    place-items: center;
 }
 
 .signup-container{
     height: 100vh;
     display: grid;
     place-items: center;
+    background-color: #9086E1;
     .input-field{
         color: white;
        
@@ -23,15 +27,83 @@
         
     }
 
-    .button {
+  
+}
+.navbar{
+    height: 10vh;
+    background-color: #9086E1;
+    width: 100vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+
+    .navitems{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
         place-items: center;
-        input{
-            padding: 10px;
-            width: 100px;
+    
+        a{
+            text-decoration: none;
             color: white;
-            background-color: rgb(214, 163, 22);
-            border: none;
-            border-radius: 15px;
+            font-weight: bold;
+            &:hover{
+                background-color: #FFBF68;
+                border-radius: 10px;                
+            }
+          
+            .links{
+                // background-color: #FFBF68;
+                border-radius: 20px;
+                padding: 10px;
+                width: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+             & :hover{
+                background-color: #FFBF68;
+             }
+               
+            }
         }
+    
+      
+    }
+
+}
+.course-container, .event-container, .gallery-container ,.home-container{
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    .form{
+        font-weight: bold;
+    }
+}
+
+//text-field
+.text-input{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(235, 234, 234);
+    border-radius: 15px;
+}
+.image-input{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+  
+}
+.button {
+    place-items: center;
+    input{
+        padding: 10px;
+        width: 100px;
+        color: black;
+        background-color: #FFBF68;
+        border: none;
+        border-radius: 15px;
+        font-weight: 400;
     }
 }

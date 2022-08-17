@@ -11,7 +11,7 @@ const StudyMaterials = () => {
         <div className="form">
 
           <label htmlFor="coursename">Program :</label>
-          <input className="text-input" type="text" /><br />
+          <input className="text-input" type="text" placeholder="Computer Science"/><br />
 
           <label htmlFor="semester">Semester :</label>
           <select name="semester" id="" className="dropdown-field">
@@ -25,7 +25,7 @@ const StudyMaterials = () => {
           <br />
         
           <label htmlFor="coursename">Subject :</label>
-          <input className="text-input" type="text" /><br />
+          <input className="text-input" type="text" placeholder="Software Engineering"/><br />
 
 
           Upload Study materials

@@ -20,10 +20,10 @@ const CourseDetalis = () => {
           <input type="radio" name="ug/pg" value="ug" />UG <input type="radio" name="ug/pg" value="pg" />PG <br />
 
           <label htmlFor="coursename">CourseName :</label>
-          <input className="text-input" type="text" /><br />
+          <input className="text-input" type="text" placeholder="Bsc Physics" /><br />
 
           <label htmlFor="fee">Fee :</label>
-          <input className="text-input" type="text" /><br />
+          <input className="text-input" type="text" placeholder="18750/-"/><br />
 
           <label htmlFor="discription">Discription :</label>
           <input className="text-input" type="text" /><br />

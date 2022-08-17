@@ -60,7 +60,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-             & :hover{
+             & :active{
                 background-color: #FFBF68;
              }
                
@@ -71,7 +71,7 @@
     }
 
 }
-.course-container, .event-container, .gallery-container ,.home-container{
+.course-container, .event-container, .gallery-container ,.home-container,.materials-container{
     height: 90vh;
     display: grid;
     place-items: center;
@@ -95,6 +95,14 @@
     width: 300px;
   
 }
+.dropdown-field{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(235, 234, 234);
+    border-radius: 15px;
+}
 .button {
     place-items: center;
     input{
@@ -107,3 +115,6 @@
         font-weight: 400;
     }
 }
+
+
+

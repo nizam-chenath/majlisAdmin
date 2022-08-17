@@ -7,8 +7,7 @@ import CourseDetalis from './components/CourseDetalis';
 import Signup from './components/Signup';
 import './styles/style.scss'
 import { Navigate } from 'react-router';
-// import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
-// import Navbar from './components/navbar/Navbar';
+
 
 import Gallery from './components/Gallery';
 import { useEffect, useState } from 'react';

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './navbar/Navbar'
 
 const StudyMaterials = () => {
+  const [sem, setSem] = useState("");
+  const [sub, setSub] = useState("");
+  const [material, setMaterial] = useState()
   return (
     <div>
       <Navbar/>
@@ -14,7 +17,7 @@ const StudyMaterials = () => {
           <input className="text-input" type="text" placeholder="Computer Science"/><br />
 
           <label htmlFor="semester">Semester :</label>
-          <select name="semester" id="" className="dropdown-field">
+          <select name="semester" id="" className="dropdown-field" value={sem} onChange={(e) => setSem(e.target.value)}>
             <option value="semester 1">Semester 1</option>
             <option value="semester 2">Semester 2</option>
             <option value="semester 3">Semester 3</option>
@@ -25,11 +28,11 @@ const StudyMaterials = () => {
           <br />
         
           <label htmlFor="coursename">Subject :</label>
-          <input className="text-input" type="text" placeholder="Software Engineering"/><br />
+          <input className="text-input" type="text" placeholder="Software Engineering" value={sub} onChange={(e) => setSem(e.target.value)}/><br />
 
 
           Upload Study materials
-          <input className="image-input" type="file" /><br />
+          <input className="image-input" type="file" value={material} onChange={(e) => setMaterial(e.target.value)}/><br />
           <div className="button">
 
             <input type="submit" value="submit" />
